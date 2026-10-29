@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RegulaMed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="RegulaMed, início">
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="8" fill="var(--navy)"/><path d="M8 18.5 13 9.5a3 3 0 0 1 5.2 3L13.2 21.5A3 3 0 0 1 8 18.5Z" fill="none" stroke="var(--teal)" stroke-width="2"/><path d="m10.6 14 5.2 3" stroke="var(--navy-ink)" stroke-width="2"/></svg>
+      RegulaMed
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#inicio" data-nav="inicio">Início</a>
+      <a href="#analise" data-nav="analise">Análise</a>
+      <a href="#resultado" data-nav="resultado">Resultado</a>
+      <a href="#normas" data-nav="normas">Base normativa</a>
+      <a href="#aprender" data-nav="aprender">Aprender</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="app"></main>
+
+<footer>
+  <div class="wrap">RegulaMed · MVP educacional. Os resultados são orientativos e não substituem a avaliação da Anvisa nem de profissional de assuntos regulatórios. Vigência das normas conferida em 29/10/2026; confira sempre o texto oficial.</div>
+</footer>
+
+<!-- Biblioteca de PDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<!-- Camadas da aplicação (a ordem importa) -->
+<script src="js/dados.js"></script>   <!-- normas, dados demonstrativos e perguntas -->
+<script src="js/motor.js"></script>   <!-- motor de regras -->
+<script src="js/app.js"></script>     <!-- interface -->
+</body>
+</html>
